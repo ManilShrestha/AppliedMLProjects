@@ -13,14 +13,6 @@ import torch.nn.functional as F
 import torchvision.transforms as T
 
 env = gym.make("MountainCar-v0")
-
-# set up matplotlib
-is_ipython = 'inline' in matplotlib.get_backend()
-if is_ipython:
-    from IPython import display
-
-plt.ion()
-
 # if GPU is to be used
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -72,14 +64,6 @@ class DQN(nn.Module):
         x = F.relu(self.layer2(x))
         return self.layer3(x)
 
-
-# BATCH_SIZE is the number of transitions sampled from the replay buffer
-# GAMMA is the discount factor as mentioned in the previous section
-# EPS_START is the starting value of epsilon
-# EPS_END is the final value of epsilon
-# EPS_DECAY controls the rate of exponential decay of epsilon, higher means a slower decay
-# TAU is the update rate of the target network
-# LR is the learning rate of the ``AdamW`` optimizer
 BATCH_SIZE = 128
 GAMMA = 0.99
 EPS_START = 0.999
@@ -140,11 +124,6 @@ def plot_durations(show_result=False):
     plt.xlabel('Episode')
     plt.ylabel('Reward')
     plt.plot(durations_t.numpy())
-    # Take 100 episode averages and plot them too
-    # if len(durations_t) >= 100:
-    #     means = durations_t.unfold(0, 100, 1).mean(1).view(-1)
-    #     means = torch.cat((torch.ones(99), means))
-    #     plt.plot(means.numpy())
 
     plt.pause(0.001)  # pause a bit so that plots are updated
     if is_ipython:
@@ -188,9 +167,6 @@ def optimize_model():
     # In-place gradient clipping
     torch.nn.utils.clip_grad_value_(policy_net.parameters(), 100)
     optimizer.step()
-
-
-
 
 
 ############# Show the game before trainin #################
