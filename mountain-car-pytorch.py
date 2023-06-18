@@ -88,7 +88,7 @@ EPS_DECAY = 1000
 TAU = 0.01
 LR = 1e-3
 
-num_episodes = 100
+num_episodes = 600
 
 # Get number of actions from gym action space
 n_actions = env.action_space.n
