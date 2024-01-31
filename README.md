@@ -5,8 +5,7 @@ Advancements in computer vision technology can be of great help to farmers and p
 This dataset consists of about 87K rgb images of healthy and diseased crop leaves which is categorized into 38 different classes. Data was downloaded from a Kaggle competition: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
 
 To achieve high accuracy on my task, I utilized a ResNet-18 model that had been pre-trained on the large-scale ImageNet dataset. ResNet-18 has demonstrated outstanding performance on a variety of classification tasks, as shown by a 2018 ACM paper(https://dl.acm.org/doi/abs/10.1145/3194452.3194461) and other studies. [Khan et al., 2018]. Given its track record, I was confident that this pre-trained model would produce strong results on my own task.
-![image](https://github.com/ManilShrestha/AppliedMLProjects/assets/20830075/adc06fac-ba97-43bf-b8c5-9d4c27fe9d79)
-
+<img width="524" alt="image" src="https://github.com/ManilShrestha/AppliedMLProjects/assets/20830075/adc06fac-ba97-43bf-b8c5-9d4c27fe9d79">
 <img width="524" alt="image" src="https://github.com/ManilShrestha/AppliedMLProjects/assets/20830075/a1668c09-62f7-45b2-911b-8f0a5b7542ec">
 
 
