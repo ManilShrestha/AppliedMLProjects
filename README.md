@@ -34,6 +34,26 @@ ReLU function was trained using stochastic gradient descent and cross entropy lo
 model's performance was subpar with the initial 35k+ features, the application of dimensionality
 reduction led to a light enhancement in results; additionally, I utilized a simpler sklearn model,
 specifically the OneVsRestClassifier and Linear SVC, to further evaluate the model.
-![image](https://github.com/ManilShrestha/AppliedMLProjects/assets/20830075/e7c5563d-adc0-43ea-8fdb-b8e49eafb9e6)
 
+## Gaming Project: Agent Plays Mountain Car with Deep Q-Learning
+Organizations or users, particularly those in the gaming industry seeking innovative ways to
+enhance player experiences, may be drawn to fund a Deep Q-learning based gaming project due
+to its advanced AI capabilities and potential for heightened user engagement. The enhanced
+dynamism and immersion offered by such an application can directly boost revenue generation,
+making the investment an attractive one. Additionally, the prospect of long-term savings in
+development costs, due to reduced need for manual coding of complex gaming scenarios offered
+by a well-structured ML application, further strengthens the appeal for potential funding.
 
+I used the gaming environment provided by OpenAI’s Gym library.
+https://gymnasium.farama.org/environments/classic_control/mountain_car/
+Note:
+For this project, I utilized the approach detailed in PyTorch's Deep Q-Learning tutorial,
+accessible at https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html.
+Reward mechanisms, neural network architecture, and hyperparameters were best modified to
+suit the specifics of the 'Mountain Car' gaming environment.
+I chose Deep Q-Learning as the model for this project because of its proven efficiency in dealing
+with high-dimensional and complex environments, such as those found in many gaming
+situations. The deep learning component allows the model to extract useful representations from
+raw data, efficiently handling the intricacies of these problems. Furthermore, this model is highly
+versatile, providing a balance between exploration and exploitation, which is crucial in
+reinforcement learning scenarios.
